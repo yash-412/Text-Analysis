@@ -1,0 +1,2 @@
+# Text Analysis
+ In my text analysis project, I used Beautiful Soup to extract data from AI-related article websites. With NLTK, I tokenized the words, performed sentiment analysis, and calculated positive/negative scores and polarity. I improved the analysis by adding my own library to the stopwords list. The project aimed to gain insights from the articles, identify sentiment, and understand opinions about AI.
