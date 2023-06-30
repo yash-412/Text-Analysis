@@ -171,14 +171,14 @@ def calculate_average_syllables_per_word(text, d):
 
 
 # Specify the path for the input and output Excel files
-input_file = 'C:\\Users\\Yash\\Desktop\\Text Analysis\\Input.xlsx'
-output_file = 'C:\\Users\\Yash\\Desktop\\Text Analysis\\Output Data Structure.xlsx'
+input_file = 'D:\\VSCodium\\Text Analysis\\Text-Analysis\\Input.xlsx' #URLs should be given in a single coulumn (Preferable Column B, SI No in Column A)
+output_file = 'D:\\VSCodium\\Text Analysis\\Text-Analysis\\Output Data.xlsx'
 
 # Read the input data from Excel into a DataFrame
 data = pd.read_excel(input_file)
 
 # Combine nltk stopwords with given stopwords
-directory = "C:\\Users\\Yash\\Desktop\\Text Analysis\\StopWords"
+directory = "D:\\VSCodium\\Text Analysis\\Text-Analysis\\StopWords"
 combined_stopwords_file = "combined_stopwords.txt"
 combined_stopwords_path = os.path.join(directory, combined_stopwords_file)
 
@@ -199,11 +199,11 @@ d = cmudict.dict()
 
 # Create positive and negative dictionary
 # Read the positive words file
-positive_words_file = "C:\\Users\\Yash\\Desktop\\Text Analysis\\MasterDictionary/positive-words.txt"
+positive_words_file = "D:\\VSCodium\\Text Analysis\\Text-Analysis\\MasterDictionary/positive-words.txt"
 positive_words_df = pd.read_csv(positive_words_file, comment=";", header=None, encoding='utf-8', names=["word"])
 positive_words = set(positive_words_df["word"])
 # Read the negative words file
-negative_words_file = "C:\\Users\\Yash\\Desktop\\Text Analysis\\MasterDictionary/negative-words.txt"
+negative_words_file = "D:\\VSCodium\\Text Analysis\\Text-Analysis\\MasterDictionary/negative-words.txt"
 negative_words_df = pd.read_csv(negative_words_file, comment=";", header=None, encoding='cp1252', names=["word"])
 negative_words = set(negative_words_df["word"])
 
